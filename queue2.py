@@ -19,7 +19,7 @@ def node_menu(ninput):
     splitin = ninput.split('/')
     xnodes = {
         'cryoem_p100':('cryoEM p100','coproc_p100=4','#$ -P cryoem'),
-        'cryoem_p40':('cryoEM p40','coproc_p40=4','#$ -P cryoem'),
+        'cryoem_p40':('cryoEM p40','coproc_p40=2','#$ -P cryoem'),
         'general_k80':('General k80','coproc_k80=2',''),
         'general_p100':('General p100','coproc_p100=4','')}
     try:
