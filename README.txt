@@ -42,7 +42,7 @@ relion_new_queue.bashrc		bashrc writted specifically for arc3.  The environment 
 ____________
 get_data.py	Script that generates data to use for making the runtime models.  Users should run it in each  of their toplevel relion directories.  Currently writes output to: /fbs/emsoftware2/LINUX/fbsmi/scripts/workshop/rln_queuefix/data 
 	
-	Data are written in /csv format with the following columns:
+	Data are written in .csv format with the following columns:
 				
 	dir		The directory the script was run in
 	jobfile		the run.job file.
@@ -64,5 +64,9 @@ get_data.py	Script that generates data to use for making the runtime models.  Us
 				
 ____________				
 arc_data_analyze.py	analyzes the data from getdata.py - outputs a file called useddata.csv, which can be used to remove outliers and then run the program again.  USAGE: arc_data_analyze.py <arcdata files>  IE ./arc_data_analyze.py data/arcdata*.csv
+
+A graph for each of the job types is produced.  Dots are datapoints, the red line is the fit to the data, and the blue line is the equation used to calculate requested runtime.
+
+Models are currently generated from Refine3D, Class3D,and Class2D jobs that went fully to completion, were not helical, and didn't begin with local angular search.  The intial intent was to build a machine learning model using many more parameters, but the single parameter appears to work well enough.
 
 
