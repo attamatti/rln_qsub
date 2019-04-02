@@ -125,6 +125,9 @@ mpirun -n {4} {5}
 
 
 print('wrote submission script to submit_script.sh'.format(outdir))
-output=open('run_submit.sh'.format(outdir),'w')
+output=open('run_submit.sh','w')
+output2=open('{0}/run_submit.sh'.format(outdir),'w')
 output.write(runscript)
+output2.write(runscript)
 output.close()
+output2.close()
