@@ -24,7 +24,7 @@ def node_menu(ninput,info):
         if info == False:
             print("ERROR: {0} is not a valid node/time entry - see the notes in the relion help".format(ninput))
         print("\nEnter the node and time in the format: Node_Name/HH:MM:SS")
-        print("Currently available nodes are: {0}".format(','.join(xnodes)))
+        print("Currently available nodes are: {0}".format(', '.join(xnodes)))
         
         sys.exit()
 ##################

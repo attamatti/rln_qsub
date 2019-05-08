@@ -1,6 +1,8 @@
 module switch intel/17.0.1 gnu/native
 module load cuda/8.0.61
 
+alias nodesinfo='/relion_queue/relion_queue2_simple.py --nodeinfo'
+
 export PATH=/home/ufaserv1_k/fbscem/relion3/relion-3.0_beta/build/bin/:$PATH
 export LD_LIBRARY_PATH=/home/ufaserv1_k/fbscem/relion3/relion-3.0_beta/build/lib/:$LD_LIBRARY_PATH
 
