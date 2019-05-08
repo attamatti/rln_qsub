@@ -97,7 +97,7 @@ mpirun -n {4} {5}
 
 ## write the scripts and give the user feedback
 print('job will be run on a {0} node'.format(nodeinfo[0][0]))
-print('wrote submission script to {0}/submit_script.sh'.format(outdir))
+print('wrote submission script to {0}/run_submit.sh'.format(outdir))
 output=open('run_submit.sh','w')
 output2=open('{0}/run_submit.sh'.format(outdir),'w')
 output.write(runscript)
