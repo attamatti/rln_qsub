@@ -7,7 +7,7 @@ export LD_LIBRARY_PATH=/home/ufaserv1_k/fbscem/relion3/relion-3.0_beta/build/lib
 export RELION_QSUB_EXTRA_COUNT=2
 export RELION_QSUB_COMMAND='bash'
 export RELION_QUEUE_USE=True
-export RELION_QSUB_TEMPLATE='/nobackup/fbsmi/relion_queue/bash_vers.sh'
+export RELION_QSUB_TEMPLATE='/nobackup/fbsmi/relion_queue/relion_queue2_simple.sh'
 
 export RELION_QSUB_EXTRA1='Email'
 export RELION_QSUB_EXTRA1_DEFAULT="`whoami`@leeds.ac.uk"
